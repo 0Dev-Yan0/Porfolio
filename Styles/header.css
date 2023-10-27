@@ -1,0 +1,100 @@
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--orange-themed);
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px 20px 15px;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a p {
+    font-weight: 900;
+}
+
+#linkedin, #github {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5px;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#linkedin:hover, #github:hover {
+    border-radius: 15px;
+    gap: 10px;
+    color: var(--sec-light-color);
+}
+
+#linkedin img, #github img {
+    height: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    margin: 0px 10px 0px 5px;
+    border: 1px solid var(--sec-light-color);
+    box-shadow: 2px 2px 3.5px var(--sec-light-color);
+    border-radius: 30px;
+    width: 500px;
+    background-color: var(--main-light-color);
+}
+
+li {
+    list-style: var(--main-listyle);
+    position: relative;
+}
+
+li a {
+    color: var(--sec-light-color);
+}
+
+li::before,
+li::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: var(--blue-themed);
+    width: 0;
+    transition: width 0.3s;
+}
+
+li::before {
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+li::after {
+    bottom: 0;
+    right: 0;
+    transform-origin: right;
+}
+
+li:hover::before,
+li:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+@media (max-width: 410px) {
+     header {
+        width: fit-content;
+    } 
+    nav {
+        width: 70%;
+        gap: 10px;
+    }
+    #linkedin, #github {
+        display: flex;
+        flex-direction: column;
+    }
+  }
