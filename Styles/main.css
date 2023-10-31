@@ -7,9 +7,9 @@
 :root {
     --main-font: 'Kanit', sans-serif;
     --main-light-color: #f0ffff;
-    --sec-light-color: #808080;
+    --sec-light-color: #696969;
     --main-dark-color: black;
-    --sec-dark-color: 	#FFFFFF;
+    --sec-dark-color: #e0e0e0;
     --orange-themed: #ff6600;
     --purple-themed: #551a8b;
     --blue-themed: #007BFF;
@@ -20,6 +20,18 @@
     --main-listyle: none;
 }
 
+@keyframes blinker {
+    0% {
+    border: 3px solid transparent;
+}
+    50% {
+    border: 3px solid var(--main-dark-color);
+}
+    100% {
+    border: 3px solid transparent;
+}
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -27,6 +39,8 @@ body {
     font-family: var(--main-font);
     font-size: var(--normal-text);
     min-height: 100vh;
+    color: var(--main-dark-color);
+    font-weight: 650;
 }
 
 h1 {
@@ -39,4 +53,34 @@ h2 {
 
 p {
     font-size: var(--normal-text);
+}
+
+.line::before,
+.line::after {
+    content: "";
+    position: absolute;
+    height: 2.5px;
+    background-color: var(--blue-themed);
+    width: 0;
+    transition: 0.5s;
+}
+
+.line::before {
+    bottom: 0;
+    left: 0;
+}
+
+.line::after {
+    bottom: 0;
+    right: 0;
+}
+
+.line:hover::before,
+.line:hover::after {
+    width: 100%;
+    transition: 0.7s;
+}
+
+.typado {
+    display: inline;
 }
