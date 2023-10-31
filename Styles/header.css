@@ -1,7 +1,7 @@
 header {
     display: flex;
     flex-direction: row;
-    background-color: var(--orange-themed);
+    background-color: var(--dark-themed);
     justify-content: space-between;
     align-items: center;
     padding: 25px 15px 20px 15px;
@@ -13,7 +13,8 @@ a {
 }
 
 a p {
-    font-weight: 900;
+    color: var(--sec-dark-color);
+    font-weight: 650;
 }
 
 #linkedin, #github {
@@ -42,7 +43,7 @@ nav {
     padding: 15px;
     margin: 0px 10px 0px 5px;
     border: 1px solid var(--sec-light-color);
-    box-shadow: 2px 2px 3.5px var(--sec-light-color);
+    box-shadow: 1px 1px 3.5px var(--main-light-color);
     border-radius: 30px;
     width: 500px;
     background-color: var(--main-light-color);
@@ -85,13 +86,13 @@ li:hover::after {
     transition: 0.5s;
 }
 
-@media (max-width: 410px) {
+@media (max-width: 430px) {
      header {
         width: fit-content;
     } 
     nav {
         width: 70%;
-        gap: 10px;
+        gap: 15px;
     }
     #linkedin, #github {
         display: flex;

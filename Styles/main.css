@@ -9,10 +9,11 @@
     --main-light-color: #f0ffff;
     --sec-light-color: #808080;
     --main-dark-color: black;
-    --sec-dark-color: white;
+    --sec-dark-color: 	#FFFFFF;
     --orange-themed: #ff6600;
     --purple-themed: #551a8b;
     --blue-themed: #007BFF;
+    --dark-themed: #1d1e22;
     --titles: 5.5em;
     --subtitles: 3em;
     --normal-text: 1.1em;
