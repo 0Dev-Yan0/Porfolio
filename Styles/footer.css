@@ -1,0 +1,138 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  background-color: var(--sec-light-color);
+  height: fit-content;
+  padding: 20px 15px 15px 15px;
+}
+
+#social {
+  display: flex;
+  flex-direction: row;
+  gap: 75px;
+  width: fit-content;
+  margin-left: 45px;
+}
+
+#linkedin, #github {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+#linkedin:hover, #github:hover {
+  border-radius: 15px;
+  gap: 15px;
+  color: var(--sec-light-color);
+}
+
+#linkedin img, #github img {
+  height: 45px;
+}
+
+#content_footer {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 80px;
+  opacity: 35%;
+  transition: 1s;
+}
+
+#content_footer:hover {
+  opacity: 100%;
+}
+
+#block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-light-color);
+  border-left: 3px solid var(--blue-themed);
+  border-top-right-radius: 30px;
+  box-shadow: 4px 4px 6px var(--main-dark-color);
+  color: var(--sec-ligt-color);
+  gap: 15px;
+  padding: 15px;
+}
+
+#block img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+/* Começo do botão toggle */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--sec-light-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--sec-dark-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--blue-themed);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--blue-themed);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/* Final do botão toggle */
+
+@media (max-width: 430px) {
+ #content_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+}
+}
