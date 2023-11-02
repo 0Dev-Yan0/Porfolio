@@ -10,14 +10,15 @@
     --main-font: 'Kanit', sans-serif;
     --main-light-color: #f0ffff;
     --sec-light-color: #696969;
-    --main-dark-color: black;
+    --main-dark-color: #000000;
     --sec-dark-color: #e0e0e0;
     --orange-themed: #ff6600;
     --purple-themed: #551a8b;
     --blue-themed: #007BFF;
     --dark-themed: #23252b;
-    --titles: 4em;
-    --subtitles: 3em;
+    --titles-one: 4em;
+    --titles-too: 3em;
+    --titles-three: 2em;
     --normal-text: 1em;
     --main-listyle: none;
 }
@@ -47,12 +48,16 @@ body {
 
 h1 {
     font-family: 'Mukta', sans-serif;
-    font-size: var(--titles);
+    font-size: var(--titles-one);
 }
 
 h2 {
-    font-size: var(--subtitles);
+    font-size: var(--titles-too);
     font-family: 'Mukta', sans-serif;
+}
+
+h3 {
+    font-size: var(--titles-three);
 }
 
 p {

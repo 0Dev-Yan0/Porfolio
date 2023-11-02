@@ -13,9 +13,9 @@ translate.addEventListener("click", (event) => {
 checkbox.addEventListener("change", (evento) => {
     const slide = evento.target.checked; 
     if (slide) {
-        theme_text.innerText = "Light mode On";
+        theme_text.innerText = "Modo claro ligado";
     } else {
-        theme_text.innerText = "Light mode Off";
+        theme_text.innerText = "Modo claro desligado";
     }
 });
 

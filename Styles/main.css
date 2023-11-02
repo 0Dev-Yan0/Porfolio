@@ -3,7 +3,6 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
-    border: 10px solid red;
 }
 
 #main_title {
@@ -18,28 +17,54 @@ main {
 #main_section {
     display: flex;
     flex-direction: row;
-    border: 10px solid green;
+}
+
+#main_img {
+    display: inline-block;
+    position: relative;
+    height: fit-content;
+}
+
+#myself {
+    opacity: 100%;
+    transition: 1s;
+}
+
+#subtitle {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    background-color: var(--sec-light-color);
+    bottom: 15px;
+    opacity: 0;
+    font-style: italic;
+    transition: 1s;
+}
+
+#main_img:hover #myself {
+    opacity: 65%;
+}
+
+#main_img:hover figcaption {
+    opacity: 1;
 }
 
 #main_div {
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    border: 10px solid blue;
+    width: 70%;
 }
 
 #main_write {
     width: fit-content;
     text-decoration: underline;
     text-decoration-color: var(--dark-themed);
-    border: 10px solid yellow;
 }
 
 #main_text {
     border-left: 3px double var(--sec-light-color);
     padding: 30px 0px 30px 20px;
-    border: 10px solid purple;
-    width: 60%;
+    width: 75%;
     transition: 3s;
     color: var(--sec-light-color);
 }
