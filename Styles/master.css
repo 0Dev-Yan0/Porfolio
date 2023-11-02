@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2? family= Kanit & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-font: 'Kanit', sans-serif;
+    --main-light-color: #f0ffff;
+    --sec-light-color: #696969;
+    --main-dark-color: black;
+    --sec-dark-color: #e0e0e0;
+    --orange-themed: #ff6600;
+    --purple-themed: #551a8b;
+    --blue-themed: #007BFF;
+    --dark-themed: #23252b;
+    --titles: 4em;
+    --subtitles: 3em;
+    --normal-text: 1em;
+    --main-listyle: none;
+}
+
+@keyframes blinker {
+    0% {
+    border: 3px solid transparent;
+}
+    50% {
+    border: 3px solid var(--main-dark-color);
+}
+    100% {
+    border: 3px solid transparent;
+}
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-light-color);
+    font-family: var(--main-font);
+    font-size: var(--normal-text);
+    min-height: 100vh;
+    color: var(--main-dark-color);
+    font-weight: 650;
+}
+
+h1 {
+    font-family: 'Mukta', sans-serif;
+    font-size: var(--titles);
+}
+
+h2 {
+    font-size: var(--subtitles);
+    font-family: 'Mukta', sans-serif;
+}
+
+p {
+    font-size: var(--normal-text);
+}
+
+a {
+    text-decoration: none;
+    color: var(--sec-dark-color);
+}
+
+.line::before,
+.line::after {
+    content: "";
+    position: absolute;
+    height: 2.5px;
+    background-color: var(--blue-themed);
+    width: 0;
+    transition: 0.5s;
+}
+
+.line::before {
+    bottom: -3px;
+    left: 0;
+}
+
+.line::after {
+    bottom: -3px;
+    right: 0;
+}
+
+.line:hover::before,
+.line:hover::after {
+    width: 100%;
+}
+
+
+.side::before {
+    content: "";
+    position: absolute;
+    width: 2.5px;
+    background-color: var(--blue-themed);
+    height: 0%;
+    transition: 0.5s;
+    bottom: 0;
+    left: 0;
+}
+
+.side:hover::before {
+    height: 100%;
+    transition: 0.7s;
+}
+
+.side::after {
+    content: "";
+    position: absolute;
+    width: 2.5px;
+    background-color: var(--blue-themed);
+    height: 0%;
+    transition: 0.5s;
+    top: 0;
+    right: 0;
+}
+
+.side:hover::after {
+    height: 100%;
+    transition: 0.7s;
+}
+  
+
+.typado {
+    display: inline;
+}

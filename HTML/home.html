@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>| Home |</title>
     <link rel="shortcut icon" type="image/jpg" href="/Assets/home.png" />
+    <link rel="stylesheet" href="/Styles/master.css">
     <link rel="stylesheet" href="/Styles/main.css">
     <link rel="stylesheet" href="/Styles/header.css">
     <link rel="stylesheet" href="/Styles/footer.css">
@@ -13,43 +14,42 @@
 
 <body>
     <header>
-        <div id="theme" class="line">
-            <h3 id="theme_text">Light mode On</h3>
+        <div id="theme">
             <label class="switch">
                 <input type="checkbox" id="checkbox" checked>
                 <span class="slider round"></span>
             </label>
+            <h5 id="theme_text">Light mode On</h5>
         </div>
         <nav>
-            <li>
-                <p class="line">Home</p>
+            <li class="line">
+                <p id="nav_text">Home</p>
             </li>
-            <li>
-                <p class="line">Projects</p>
+            <li class="line">
+                <p id="nav_text">Projects</p>
             </li>
-            <li>
-                <p class="line">About</p>
+            <li class="line">
+                <p id="nav_text">About</p>
             </li>
-            <li>
-                <p class="line">Skills</p>
+            <li class="line">
+                <p id="nav_text">Skills</p>
             </li>
         </nav>
-        <div id="translate">
+        <button id="translate">
             En
-        </div>
+        </button>
     </header>
     <main>
-        <h2 id="titulo" class="typado"></h2>
-        <h3 id="teste" class="typado"></h3>
+        <h1 id="main_title">ABOUT ME</h1>
+        <section id="main_section">
+            <div id="main_div">
+                <h2 id="main_write" class="typado"></h2>
+                <p id="main_text">Sou um grande entusiasta do mundo da programação e ultimamente ganhei a paixão por todo esse ambiente tecnológico. Minhas motivações me impulsionam a entregar resultados e soluções de alta qualidade. Durante minha experiência em um curso que muito me introduziu ao mercado de trabalho mas tinha seu foco em formar os alunos na programação, participei em diversas atividades de grupo (como Hackathons), que envolviam minha colaboração e relações produtivamente eficientes. Já utilizei muito das minhas atividades voluntárias e o acesso que recebi de 1 ano de Alura nesses meios para poder me lapidar profissionalmente e melhorar como um programador solidário.</p>
+            </div>
+            <img src="/Assets/dirk.png" alt="Myself">
+        </section>
     </main>
     <footer>
-        <section id="social">
-            <div id="github">
-                <a href="https://github.com/0Dev-Yan0" target="_blank"><img src="/Assets/github_white.png" alt="github"></a>
-                <a href="https://github.com/0Dev-Yan0" target="_blank">
-                    <p>GitHub</p>
-                </a>
-            </div>
             <div id="linkedin">
                 <a href="https://www.linkedin.com/in/yan3" target="_blank"><img src="/Assets/linkedin_white.png"
                         alt="linkedin"></a>
@@ -57,7 +57,6 @@
                     <p>Linkedin</p>
                 </a>
             </div>
-        </section>
         <section id="content_footer">
             <div id="block">
                 <img src="/Assets/dirk.png" alt="test">
@@ -69,12 +68,18 @@
             </div>
             <div id="block">
                 <img src="/Assets/dirk.png" alt="test">
-                <p>lorem ipsum teste</p>
+                <p>lorem ipsum</p>
             </div>
         </section>
+        <div id="github">
+            <a href="https://github.com/0Dev-Yan0" target="_blank"><img src="/Assets/github_white.png" alt="github"></a>
+            <a href="https://github.com/0Dev-Yan0" target="_blank">
+                <p>GitHub</p>
+            </a>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="/main.js"></script>
+    <script src="/JavaScript/main.js"></script>
 </body>
 
 </html>

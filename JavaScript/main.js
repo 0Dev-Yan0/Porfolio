@@ -1,5 +1,4 @@
 const checkbox = document.getElementById("checkbox");
-const theme_text = document.getElementById("theme_text");
 const translate = document.getElementById("translate");
 
 translate.addEventListener("click", (event) => {
@@ -12,18 +11,17 @@ translate.addEventListener("click", (event) => {
 });
 
 checkbox.addEventListener("change", (evento) => {
-    if (evento.target.checked) {
-        console.log("Hello World");
+    const slide = evento.target.checked; 
+    if (slide) {
         theme_text.innerText = "Light mode On";
     } else {
-        console.log("Goodbye World");
         theme_text.innerText = "Light mode Off";
     }
 });
 
 //! Utilização da biblioteca typed.js aqui;
 var configuracoes = {
-    strings: ["Ae porra está funcinando yippe!", "Segunda frase escrita por que sim", "E uma terceira ainda"],
+    strings: ["Olá mundo, meu nome é Yan ⭐", "Sou programador Full-Stack Júnior 💻", "Sejam bem vindos ao meu portfólio ❤️"],
     typeSpeed: 40, //! Velocidade da escrita; - Quanto menos mais rápido;
     backSpeed: 15, //! Velocidade da deletação; - Quanto menos mais rápido;
     loop: true, //! Se o loop vai acontecer ou não, verdadeiro ou falso para aplicar;
@@ -37,5 +35,5 @@ var configuracoes = {
     // startDelay: 2000, //! Delay para começar a escrever o texto; - Quanto menos mais rápido;
 };
   
-var escrita = new Typed("#titulo", configuracoes); //! A sentença a frente é obrigatória e tem que ser idêntica [ new Typed ];
+var escrita = new Typed(".typado", configuracoes); //! A sentença a frente é obrigatória e tem que ser idêntica [ new Typed ];
 //! ([ "Elemento na onde vai ser escrito o texto" ], [ Aqui vai a configuração que você aplicou em qualquer variável e então conectou ela na syntax ]);

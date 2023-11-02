@@ -1,91 +1,49 @@
-@import url('https://fonts.googleapis.com/css2? family= Kanit & display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
-
-:root {
-    --main-font: 'Kanit', sans-serif;
-    --main-light-color: #f0ffff;
-    --sec-light-color: #696969;
-    --main-dark-color: black;
-    --sec-dark-color: #e0e0e0;
-    --orange-themed: #ff6600;
-    --purple-themed: #551a8b;
-    --blue-themed: #007BFF;
-    --dark-themed: #1d1e22;
-    --titles: 5.5em;
-    --subtitles: 3em;
-    --normal-text: 1.1em;
-    --main-listyle: none;
-}
-
-@keyframes blinker {
-    0% {
-    border: 3px solid transparent;
-}
-    50% {
-    border: 3px solid var(--main-dark-color);
-}
-    100% {
-    border: 3px solid transparent;
-}
-}
-
-body {
+main {
     display: flex;
     flex-direction: column;
-    background-color: var(--main-light-color);
-    font-family: var(--main-font);
-    font-size: var(--normal-text);
-    min-height: 100vh;
-    color: var(--main-dark-color);
-    font-weight: 650;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 10px solid red;
 }
 
-h1 {
-    font-size: var(--titles);
-}
-
-h2 {
-    font-size: var(--subtitles);
-}
-
-p {
-    font-size: var(--normal-text);
-}
-
-a {
-    text-decoration: none;
-    color: var(--sec-dark-color);
-}
-
-.line::before,
-.line::after {
-    content: "";
-    position: absolute;
-    height: 2.5px;
+#main_title {
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     background-color: var(--blue-themed);
-    width: 0;
-    transition: 0.5s;
+    border-radius: 20px;
+    color: var(--dark-themed);
 }
 
-.line::before {
-    bottom: 0;
-    left: 0;
+#main_section {
+    display: flex;
+    flex-direction: row;
+    border: 10px solid green;
 }
 
-.line::after {
-    bottom: 0;
-    right: 0;
+#main_div {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border: 10px solid blue;
 }
 
-.line:hover::before,
-.line:hover::after {
-    width: 100%;
-    transition: 0.7s;
+#main_write {
+    width: fit-content;
+    text-decoration: underline;
+    text-decoration-color: var(--dark-themed);
+    border: 10px solid yellow;
 }
 
-.typado {
-    display: inline;
+#main_text {
+    border-left: 3px double var(--sec-light-color);
+    padding: 30px 0px 30px 20px;
+    border: 10px solid purple;
+    width: 60%;
+    transition: 3s;
+    color: var(--sec-light-color);
 }
+
+/* #main_text:hover {
+
+} */
