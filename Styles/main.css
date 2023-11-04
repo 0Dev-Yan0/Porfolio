@@ -41,14 +41,14 @@ main {
 }
 
 .slide img {
-    max-width: 35em;
+    max-width: 27.5em;
     max-height: 15em;
 }
 
 #main_section {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: fit-content;
 }
 
 #main_div {
@@ -95,8 +95,9 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 50vh;
     gap: 30px;
-    padding-top: 100%;
+    padding-top: 95%;
     overflow: scroll;
 }
 
@@ -142,13 +143,14 @@ main {
 
 #main_img {
     display: inline-block;
-    width: 35%;
-    height: 20em;
+    width: 30%;
+    height: 17.5em;
     position: relative;
 }
 
 #main_img img {
     width: 100%;
+    border-radius: 15px;
     height: 100%;
 }
 
