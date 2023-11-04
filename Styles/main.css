@@ -17,12 +17,71 @@ main {
 #main_section {
     display: flex;
     flex-direction: row;
+    border: 10px solid red;
+}
+
+#main_div {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border: 10px solid green;
+}
+
+#main_skills {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: start;
+    border: 10px solid purple;
+}
+
+#main_soft {
+    border: 10px solid gold;
+    width: 100%;
+}
+
+#main_graph {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    background-color: var(--sec-dark-color);
+    padding: 10px;
+    box-shadow: 5px 5px 4.5px var(--main-dark-color);
+    border-top: 1.5px solid var(--dark-themed);
+    border-left: 1.5px solid var(--dark-themed);
+    border-radius: 15px;
+    gap: 10px;
+}
+
+#main_graph li {
+    width: 100%;
+}
+
+.status_bar {
+    display: block;
+    height: 7.5px;
+}
+
+#main_write {
+    width: fit-content;
+    text-decoration: underline;
+    text-decoration-color: var(--dark-themed);
+}
+
+#main_text {
+    border-left: 3px double var(--sec-light-color);
+    padding: 30px 0px 30px 20px;
+    width: 75%;
+    transition: 3s;
+    color: var(--sec-light-color);
 }
 
 #main_img {
     display: inline-block;
     position: relative;
     height: fit-content;
+    border: 10px solid blue;
 }
 
 #myself {
@@ -48,27 +107,3 @@ main {
 #main_img:hover figcaption {
     opacity: 1;
 }
-
-#main_div {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-
-#main_write {
-    width: fit-content;
-    text-decoration: underline;
-    text-decoration-color: var(--dark-themed);
-}
-
-#main_text {
-    border-left: 3px double var(--sec-light-color);
-    padding: 30px 0px 30px 20px;
-    width: 75%;
-    transition: 3s;
-    color: var(--sec-light-color);
-}
-
-/* #main_text:hover {
-
-} */

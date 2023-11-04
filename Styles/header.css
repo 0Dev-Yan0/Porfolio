@@ -95,12 +95,6 @@ header {
   color: var(--dark-themed);
 }
 
-li p {
-  color: var(--main-dark-color);
-  font-weight: 650;
-  cursor: pointer;
-}
-
 nav {
   display: flex;
   flex-direction: row;
@@ -116,7 +110,6 @@ nav {
 
 .line {
   position: relative;
-  list-style: var(--main-listyle);
 }
 
 #nav_text {

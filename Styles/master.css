@@ -13,6 +13,9 @@
     --main-dark-color: #000000;
     --sec-dark-color: #e0e0e0;
     --orange-themed: #ff6600;
+    --yellow-themed: #e9e930;
+    --green-themed: #9acd32;
+    --aqua-thmed: #2bdfdf;
     --purple-themed: #551a8b;
     --blue-themed: #007BFF;
     --dark-themed: #23252b;
@@ -62,11 +65,16 @@ h3 {
 
 p {
     font-size: var(--normal-text);
+    color: var(--main-dark-color);
 }
 
 a {
     text-decoration: none;
     color: var(--sec-dark-color);
+}
+
+li {
+    list-style: var(--main-listyle);
 }
 
 .line::before,
@@ -130,4 +138,71 @@ a {
 
 .typado {
     display: inline;
+}
+
+.status_bar.html {
+    background-color: var(--orange-themed);
+    width: 1%;
+    animation: html 2.5s ease-in-out 2s 1 both;
+}
+.status_bar.css {
+    background-color: var(--blue-themed);
+    width: 1%;
+    animation: css 2.5s ease-in-out 2s 1 both;
+}
+.status_bar.js {
+    background-color: var(--yellow-themed);
+    width: 1%;
+    animation: js 2.5s ease-in-out 2s 1 both;
+}
+.status_bar.node {
+    background-color: var(--green-themed);
+    width: 1%;
+    animation: node 2.5s ease-in-out 2s 1 both;
+}
+.status_bar.react {
+    background-color: var(--aqua-thmed);
+    width: 1%;
+    animation: react 2.5s ease-in-out 2s 1 both;
+}
+
+@keyframes html {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 85%;
+    }
+}
+@keyframes css {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+@keyframes js {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+@keyframes node {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 40%;
+    }
+}
+@keyframes react {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
 }

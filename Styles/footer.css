@@ -44,7 +44,7 @@ footer {
   opacity: 100%;
 }
 
-#block {
+#about_block, #block2, #skills_block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,14 +52,18 @@ footer {
   border-left: 3px solid var(--blue-themed);
   border-top-right-radius: 30px;
   box-shadow: 4px 4px 6px var(--main-dark-color);
-  color: var(--sec-ligt-color);
   gap: 15px;
   padding: 15px;
+  height: fit-content;
 }
 
-#block img {
+#about_block img, #block2 img {
   max-width: 50px;
   max-height: 50px;
+}
+
+#skills_block img {
+  max-width: 125px;
 }
 
 /* @media (max-width: 430px) {
