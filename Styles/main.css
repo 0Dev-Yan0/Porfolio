@@ -23,28 +23,17 @@ main {
 #main_div {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    justify-content: center;
+    width: fit-content;
+    gap: 50px;
     border: 10px solid green;
-}
-
-#main_skills {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: start;
-    border: 10px solid purple;
-}
-
-#main_soft {
-    border: 10px solid gold;
-    width: 100%;
 }
 
 #main_graph {
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 100%;
+    width: 85%;
     background-color: var(--sec-dark-color);
     padding: 10px;
     box-shadow: 5px 5px 4.5px var(--main-dark-color);
@@ -56,6 +45,54 @@ main {
 
 #main_graph li {
     width: 100%;
+}
+
+#main_skills {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: start;
+}
+
+#main_soft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+}
+
+#main_soft h3 {
+    color: var(--dark-themed);
+    text-decoration: underline;
+}
+
+.soft_skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    background-color: var(--sec-dark-color);
+    border-radius: 25px;
+    padding: 10px;
+    gap: 10px;
+    transition: 1s;
+}
+
+.soft_skills:hover {
+    width: 100%;
+}
+
+.soft_skills img {
+    max-width: 65px;
+    max-height: 65px;
+}
+
+.soft_skills p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 .status_bar {
@@ -81,7 +118,7 @@ main {
     display: inline-block;
     position: relative;
     height: fit-content;
-    border: 10px solid blue;
+    border: 10px solid yellow;
 }
 
 #myself {
