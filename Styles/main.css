@@ -3,6 +3,7 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
+    border: 10px solid palegreen;
 }
 
 #main_title {
@@ -12,6 +13,56 @@ main {
     background-color: var(--blue-themed);
     border-radius: 20px;
     color: var(--dark-themed);
+}
+
+@keyframes animacao {
+    0% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    95% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -400%;
+    }
+}
+
+#main_slide {
+    border: 10px solid black;
+    overflow: hidden;
+    width: 100%;
+    height: 75vh;
+}
+
+#projects {
+    display: flex;
+    border: 10px solid gold;
+    width: 500%;
+    height: 100%;
+    animation: animacao 20s infinite;
+}
+
+.slide {
+    border: 10px solid orangered;
+    width: 20%;
 }
 
 #main_section {
