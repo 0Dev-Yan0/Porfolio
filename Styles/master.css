@@ -38,6 +38,77 @@
 }
 }
 
+@keyframes animacao {
+    0% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    95% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -400%;
+    }
+}
+
+@keyframes html {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 95%;
+    }
+}
+@keyframes css {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 85%;
+    }
+}
+@keyframes js {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+@keyframes node {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 40%;
+    }
+}
+@keyframes react {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -166,43 +237,3 @@ li {
     animation: react 2.5s ease-in-out 2s 1 both;
 }
 
-@keyframes html {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 95%;
-    }
-}
-@keyframes css {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 85%;
-    }
-}
-@keyframes js {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 70%;
-    }
-}
-@keyframes node {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 40%;
-    }
-}
-@keyframes react {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 60%;
-    }
-}
